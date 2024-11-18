@@ -24,7 +24,7 @@ Crie ou navegue até o repositório no seu PC.
 Atualize o URL remoto com o comando abaixo, substituindo o IP pelo IP do seu VPS e o nome do repositório pelo nome desejado:
 
 ```bash
-git remote add origin ssh://root@apiVPS/var/www/html/nome-repositorio-bare.git
+git remote add origin ssh://root@IP_do_VPS/var/www/html/nome-repositorio-bare.git
 ```
 
 ### 3. Faça o Push do Branch Principal
