@@ -1,0 +1,8 @@
+type Query {
+  usuarios: [Usuario]
+  usuarioID(id: Int): Usuario
+  usuarioNome(nome: String): Usuario
+  usuarioEmail(email: String): Usuario
+  usuarioEmailConsulta(email: String): Usuario
+  UsuarioLogado(dados: login): Usuario
+}

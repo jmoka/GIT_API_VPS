@@ -1,0 +1,20 @@
+ 
+Apara uso em produção
+NODE_ENV=production
+
+Sempre que alterar as variaveis de ambiente do windows , reinicie a máquina!
+
+Se as variabeis de ambiente foram configuradas mop windows o arquivo .env não é necessário!
+ 
+ // Copipar para dentro de .env a variavais abaixo
+
+NODE_ENV=development
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=12345678
+DB_NAME=baseCliente
+DB_PORT=3306
+DB_SECRET= $2y$10$9HgMnwLBwrlqJV/jf01YDe4HatluuYRPgkpaHGhNq5W9iNdUPafpa
+
+
+

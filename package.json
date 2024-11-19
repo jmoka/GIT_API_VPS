@@ -1,0 +1,51 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Missão Pratica nivel 5 mundo 5",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "client": "node client.js",
+    "build": "webpack --mode production"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "keywords": [],
+  "author": "joao tavares",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/schema": "^10.0.6",
+    "apollo-server": "^3.13.0",
+    "apollo-server-express": "^3.13.0",
+    "axios": "^1.7.7",
+    "backend": "file:",
+    "bcrypt": "^5.1.1",
+    "cross-fetch": "^4.0.0",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "fs": "^0.0.1-security",
+    "graphql": "^16.9.0",
+    "graphql-import": "^1.0.2",
+    "graphql-tag": "^2.12.6",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.4",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/node": "^7.25.0",
+    "@babel/preset-env": "^7.26.0",
+    "nodemon": "^3.1.4",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

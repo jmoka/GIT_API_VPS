@@ -1,0 +1,8 @@
+# schema/index.graphql
+
+type Mutation {
+  novoUsuario(user: UsuarioInput!): Usuario
+  excluirUsuario(filtro: FiltraUsuario!): Usuario
+  alterarUsuario(user: AlterarUsuario, filtro: FiltraUsuario!): Usuario
+  loginUsuario(dados: login): UsuarioLogin
+}

@@ -1,0 +1,58 @@
+type Usuario {
+  id: ID!
+  nome: String!
+  email: String!
+  perfil: Perfil
+  status: String
+  dataCriacao: Date
+}
+
+type UsuarioLogin {
+  id: ID!
+  nome: String!
+  email: String!
+  perfil: Perfil!
+  status: String!
+  token: String
+}
+
+type Perfil {
+  id: Int
+  nome: String
+  rotulo: String
+}
+
+enum enumStatusUsuarios {
+  ATIVO
+  INATIVO
+  BLOQUEADO
+}
+
+scalar Date
+
+input UsuarioInput {
+  nome: String!
+  email: String!
+  senha: String!
+  perfil: Int
+  status: String
+  token: String
+}
+
+input AlterarUsuario {
+  nome: String
+  email: String
+  perfil: Int
+  status: String
+}
+
+input FiltraUsuario {
+  id: Int
+  nome: String
+  email: String
+}
+
+input login {
+  email: String!
+  senha: String!
+}
